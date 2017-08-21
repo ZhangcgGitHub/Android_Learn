@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.littletree.thtplay">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Appwelcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.WelcomeGuideActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.search.SpotsSearch">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.spots_search"
+                android:resource="@xml/spots_search" />
+        </activity>
+        <activity android:name=".activity.BottomActivity" />
+        <activity android:name=".activity.TopActivity" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

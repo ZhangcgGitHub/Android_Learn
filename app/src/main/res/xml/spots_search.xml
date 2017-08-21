@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spots_search xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="contactsList"
+    android:hint="请输入景点名称"
+    android:searchMode="queryRewriteFromText" />
